@@ -1,0 +1,24 @@
+{
+  "name": "unit_converter",
+  "version": "1.0.0",
+  "type": "module",
+  "engines": {
+    "node": "20"
+  },
+  "description": "Unit converter used to convert between different units of measurement.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --env-file=.env index.js",
+    "start:dev": "nodemon --env-file=.env index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Yuriy Kvartsianiy",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}

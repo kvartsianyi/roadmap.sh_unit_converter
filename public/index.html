@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.cdnfonts.com/css/pixgothic7" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<title>Unit Converter App</title>
+</head>
+<body>
+	<div class="converter-container">
+		<h2 class="converter-title">Unit Converter</h2>
+
+			<form class="converter-form">
+				<nav class="nav">
+					<ul>
+						<li class="nav-item active">
+							<label for="length">Length</label>
+							<input id="length" type="radio" name="unit" class="nav-item active" value="length" checked />
+						</li>
+						<li class="nav-item">
+							<label for="weight">Weight</label>
+							<input id="weight" type="radio" name="unit" class="nav-item" value="weight" />
+						</li>
+						<li class="nav-item">
+							<label for="temperature">Temperature</label>
+							<input id="temperature" type="radio" name="unit" class="nav-item" value="temperature" />
+						</li>
+					</ul>
+				</nav>
+				<div class="d-flex flex-column">
+					<label for="number">Enter the <span class="unit-text">length</span> to convert</label>
+					<input name="number" type="number" placeholder="0">
+				</div>
+		
+				<div class="d-flex flex-column">
+					<label for="convert-from">Unit to convert from</label>
+					<select name="convert-from"></select>
+				</div>
+				
+				<div class="d-flex flex-column">
+					<label for="convert-to">Unit to convert to</label>
+					<select name="convert-to"></select>
+				</div>
+				<div class="text-right">
+					<button type="submit">Convert</button>
+				</div>
+			</form>
+
+			<div class="converter-result d-none">
+				<p>Result of your calculation</p>
+				<p>Input: <span class="converter-input"></span></p>
+				<p>Converted to: <span class="converter-output"></span></p>
+				
+				<div class="text-right">
+					<button class="reset-form">Reset</button>
+				</div>
+			</div>
+	</div>
+
+	<script type="module" src="index.js"></script>
+	<script type="module" src="constants.js"></script>
+	<script type="module" src="utils.js"></script>
+</body>
+</html>

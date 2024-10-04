@@ -1,0 +1,141 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul, li {
+	list-style: none;
+}
+
+label {
+	cursor: inherit;
+}
+
+select, input:not(input[type=radio]) {
+	border-radius: 10px;
+  height: 30px;
+	margin: 10px 0;
+	padding: 5px 10px;
+	font-size: 16px;
+	font-weight: bold;
+	/* font-style: italic; */
+}
+
+input[type=radio] {
+	display: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+}
+
+body {
+	background-color: #3C3D37;
+	color: #FDFDFF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+}
+
+button {
+	cursor: pointer;
+	padding: 15px 30px;
+	margin-top: 15px;
+	border: 2px solid #FDFDFF;
+	border-radius: 10px;
+	color: #FDFDFF;
+	background-color: #AD49E1;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+option {
+	font-weight: bold;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.d-none {
+	display: none;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.converter-container {
+	display: inline-block;
+	margin: 2rem;
+	padding: 1rem;
+	border: 2px solid #FDFDFF;
+	border-radius: 10px;
+	font-family: 'PIXgothic_7', monospace, Arial, Helvetica, sans-serif;
+	background-color: #1E201E;
+	-webkit-box-shadow: 0px 0px 30px 3px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 30px 3px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 30px 3px rgba(0,0,0,0.75);
+	width: 450px;
+}
+
+.converter-title {
+	font-size: 36px;
+}
+
+.converter-form {
+	margin-top: 15px;
+}
+
+.nav ul {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.nav-item {
+	cursor: pointer;
+	margin: 5px 0;
+	font-size: 18px;
+	font-weight: 300;
+	border-bottom: 2px solid transparent;
+	transition: border-bottom .2s, color .3s;
+}
+
+.nav-item:hover {
+	color: #AD49E1;
+}
+
+.nav-item:has(input[type="radio"]:checked) {
+	color: #AD49E1;
+	border-bottom: 2px solid #AD49E1;
+}
+
+.unit-text {
+	color: #AD49E1;
+}
+
+.converter-result p:nth-child(1) {
+	margin: 15px 0;
+}
+
+.converter-input, .converter-output {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.reset-form {
+	margin-top: 25px;
+}
