@@ -21,7 +21,7 @@ cd ./unit_converter
 
 Run the folowing commands in project folder:
 ```
-yarn init
+yarn
 
 yarn start
 ```
